@@ -1,0 +1,8 @@
+program: SaitoShin04.o getdouble.o
+	gcc SaitoShin04.o getdouble.o -o program -lm
+
+SaitoShin04.o: SaitoShin04.c getdouble.h
+	gcc -c SaitoShin04.c
+
+getdouble.o: getdouble.c getdouble.h
+	gcc -c getdouble.c
